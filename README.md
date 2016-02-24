@@ -4,7 +4,7 @@ DRAGON's LAIR
 Ah .. such a nice game to play on the Bitbox ! (see Angry Video Game Nerd or Joueur du Grenier reviews ;) ... )
 For more info about the game see : http://www.dragons-lair-project.com/games/pages/dl.asp
 
-![dragons lair!](./dlair.jpg)
+![dragons lair!](https://github.com/makapuf/bitbox-fmv/blob/master/dlair.jpeg?raw=true)
 
 This game / engine is aimed at reproducing the dragons lair game on the Bitbox. It's only compatible with the standard bitbox since the data is streamed from SD card.
 
@@ -23,13 +23,13 @@ Levels are typically build using blender, by inserting markers on the timeline a
 Blender animation takes the video and encodes it to the neede framerate, resolution.
 Render audio to mixdown.wav
 and frames as is
-Blender script post_render.py then exports a makefile which needs to be run
+Blender script post_render.py then exports a makefile which needs to be run, then run 
 
-run  : make -j4 -f frames/Makefile
-# .. wait "a bit" while video gets encoded
-run final script ```build_final.py ``` from blender to pack everything to frames.ani
+    make -j4 -f frames/Makefile
+    # .. wait "a bit" while video gets encoded
+    run final script ```build_final.py ``` from blender to pack everything to frames.ani
 
-The orignial data used for this has been saved from : https://www.youtube.com/watch?v=znO_m00s8II (save it locally to dragons_lair_arcade_game_laserdisc.mp4)
+The original data used for this has been saved from : https://www.youtube.com/watch?v=znO_m00s8II (save it locally to dragons_lair_arcade_game_laserdisc.mp4)
 
 
 Frame binary format / player logic
