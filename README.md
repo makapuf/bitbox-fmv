@@ -2,7 +2,10 @@ DRAGON's LAIR
 =============
 
 Ah .. such a nice game to play on the Bitbox ! (see Angry Video Game Nerd or Joueur du Grenier reviews ;) ... )
+
 For more info about the game see : http://www.dragons-lair-project.com/games/pages/dl.asp
+
+for Bitbox itself see main repo / wiki : https://github.com/makapuf/bitbox/
 
 ![dragons lair!](https://github.com/makapuf/bitbox-fmv/blob/master/dlair.jpeg?raw=true)
 
