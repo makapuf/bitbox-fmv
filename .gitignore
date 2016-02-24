@@ -1,0 +1,8 @@
+build/
+*_emu
+*_test
+*.bin
+*.elf
+frames/
+audio.wav
+frames.ani
