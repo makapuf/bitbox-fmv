@@ -1,6 +1,10 @@
 DRAGON's LAIR
 =============
 
+Ah .. such a nice game to play on the Bitbox ! (see Angry Video Game Nerd or Joueur du Grenier reviews ;) ... )
+
+![./dlair.jpg](dragons lair !)
+
 This game / engine is aimed at reproducing the dragons lair game on the Bitbox. It's only compatible with the standard bitbox since the data is streamed from SD card.
 
 To play it
@@ -32,12 +36,12 @@ Frame binary format / player logic
 
 Most of the logic is encoded in the export script, the player executes each frame data and is actually quite simple.
 
-Each frame is coded independently - allowing jump to any frame - , and gets encoded as
+Each frame is coded independently - allowing jump to any frame - , and gets encoded as :
 
     - u32 event_id, frame_id
     - u32 width, height
 	- palette of 256 u16
-    - btc frame as 1 u32 for each 4x4 block (ie size=w*h/4)
+    - btc frame as 1 u32 for each 4x4 block (ie size=w*h/4) -- see blog entry for btc4
     - u8 sound[1066]
     - padding up to next 512B
 
