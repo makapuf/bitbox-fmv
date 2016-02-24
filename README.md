@@ -2,8 +2,9 @@ DRAGON's LAIR
 =============
 
 Ah .. such a nice game to play on the Bitbox ! (see Angry Video Game Nerd or Joueur du Grenier reviews ;) ... )
+For more info about the game see : http://www.dragons-lair-project.com/games/pages/dl.asp
 
-![./dlair.jpg](dragons lair !)
+![dragons lair!](./dlair.jpg)
 
 This game / engine is aimed at reproducing the dragons lair game on the Bitbox. It's only compatible with the standard bitbox since the data is streamed from SD card.
 
