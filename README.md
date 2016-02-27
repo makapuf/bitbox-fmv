@@ -27,13 +27,13 @@ Blender animation takes the video and encodes it to the needed framerate, resolu
 
 In order to render an animation to game data :
 
-    - Save the following video https://www.youtube.com/watch?v=znO_m00s8II to dragons_lair_arcade_game_laserdisc.mp4
-    - Open the video_15fps.blend in Blender, then press the render/audio button to save audio as mixdown.wav
-    - Now, do Render->Render Animation.
-    - Still in Blender, change the editor back to Text Editor and run the python script post_render.py (alt+p).
-    - On the command line, run make -j4 -f frames/Makefile.
-    - Back in Blender, get to the final_build.py script and run it (alt+p). This will pack frames and audio to frames.ani
-    - Back on the command line, type make, to create the bitbox and emulator executable.
+ - Save the following video https://www.youtube.com/watch?v=znO_m00s8II to dragons_lair_arcade_game_laserdisc.mp4
+ - Open the video_15fps.blend in Blender, then press the render/audio button to save audio as mixdown.wav
+ - Now, do Render->Render Animation.
+ - Still in Blender, change the editor back to Text Editor and run the python script post_render.py (alt+p).
+ - On the command line, run make -j4 -f frames/Makefile.
+ - Back in Blender, get to the final_build.py script and run it (alt+p). This will pack frames and audio to frames.ani
+ - Back on the command line, type make, to create the bitbox and emulator executable.
 
 Frame binary format / player logic
 -----------------------------------
