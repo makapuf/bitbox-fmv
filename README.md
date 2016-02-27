@@ -21,19 +21,19 @@ Put the frames.ani animation on your SD card and load the fmv.bin file, then pre
 To build levels
 ----------------
 
-Levels are typically build using blender, by inserting markers on the timeline and coding game logic as python.
+Levels are typically built using blender, by inserting markers on the timeline and coding game logic as python.
 
-Blender animation takes the video and encodes it to the neede framerate, resolution.
-Render audio to mixdown.wav
-and frames as is
-Blender script post_render.py then exports a makefile which needs to be run, then run 
+Blender animation takes the video and encodes it to the needed framerate, resolution, which is currently 400x300 15fps.
 
-    make -j4 -f frames/Makefile
-    # .. wait "a bit" while video gets encoded
-    run final script ```build_final.py ``` from blender to pack everything to frames.ani
+In order to render an animation to game data :
 
-The original data used for this has been saved from : https://www.youtube.com/watch?v=znO_m00s8II (save it locally to dragons_lair_arcade_game_laserdisc.mp4)
-
+    - Save the following video https://www.youtube.com/watch?v=znO_m00s8II to dragons_lair_arcade_game_laserdisc.mp4
+    - Open the video_15fps.blend in Blender, then press the render/audio button to save audio as mixdown.wav
+    - Now, do Render->Render Animation.
+    - Still in Blender, change the editor back to Text Editor and run the python script post_render.py (alt+p).
+    - On the command line, run make -j4 -f frames/Makefile.
+    - Back in Blender, get to the final_build.py script and run it (alt+p). This will pack frames and audio to frames.ani
+    - Back on the command line, type make, to create the bitbox and emulator executable.
 
 Frame binary format / player logic
 -----------------------------------
