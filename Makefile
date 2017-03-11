@@ -1,11 +1,11 @@
 #testkernel makefile
 NAME = fmv
 GAME_C_FILES = player.c
-GAME_C_OPTS = -DVGAMODE_400 -DBITBOX_SAMPLERATE=16000 -DBITBOX_SNDBUF_LEN=1066
+DEFINES = VGA_MODE=400 BITBOX_SAMPLERATE=16000 BITBOX_SNDBUF_LEN=1066
 
 USE_SDCARD = 1
 
-include $(BITBOX)/lib/bitbox.mk
+include $(BITBOX)/kernel/bitbox.mk
 
 # to make the video (this step is manual, because I'm lazy)
 # - open the blender file, render audio to mixdown.wav and frames as is

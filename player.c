@@ -13,7 +13,7 @@
 
 
 #include <stdint.h>
-#include <bitbox.h>
+#include "kernel/bitbox.h"
 #include <string.h>
 #include "fatfs/ff.h"
 
@@ -82,8 +82,6 @@ void game_frame()
 	// sometimes if we're too slow we can skip a vga frame  
 	static int read_frame;
 	
-	kbd_emulate_gamepad();
-
 	if (read_frame%4==0) {
 
 		// exchange frame buffers
